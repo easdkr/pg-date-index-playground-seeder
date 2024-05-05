@@ -6,10 +6,32 @@ To install dependencies:
 bun install
 ```
 
+To create the database:
+
+```bash
+docker compose up -d
+```
+
+To sink the database with prisma:
+
+```bash
+bun db:push
+```
+
+To generate the prisma client:
+
+```bash
+bun db:generate
+```
+
+To seed:
+
+```bash
+bun db:seed
+```
+
 To run:
 
 ```bash
-bun run index.ts
+bun start
 ```
-
-This project was created using `bun init` in bun v1.1.7. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
