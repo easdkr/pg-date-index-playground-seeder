@@ -1,0 +1,22 @@
+{
+  "name": "pg-date-column-index",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed": "bun run seed.ts"
+  },
+  "devDependencies": {
+    "@prisma/client": "^5.13.0",
+    "@types/bun": "latest",
+    "prisma": "^5.13.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "js-joda": "^1.11.0"
+  }
+}
